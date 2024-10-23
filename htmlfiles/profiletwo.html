@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f7f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #d0e7d4;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 20px;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .sidebar ul li a:hover {
+            color: #0056b3;
+        }
+        .main-content {
+            flex: 1;
+            background-color: #fff;
+            padding: 40px;
+        }
+        .main-content h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .address-card {
+            background-color: #effaf1;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .address-card h2 {
+            font-size: 20px;
+            color: #333;
+        }
+        .address-card p {
+            font-size: 16px;
+            color: #555;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #45a049;
+        }
+        .logout-btn {
+            background-color: #f44336;
+            
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>User1</h2>
+            <ul>
+                <li><a href="#">Personal Information</a></li>
+                <li><a href="#">Address Book</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Your Orders</a></li>
+                <li><a href="#">Your Listings</a></li>
+                <li><a href="#">Referral Code</a></li>
+                <li><a href="#">Rewards/Coupons</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <button class="logout-btn">Log Out</button>
+        </div>
+        <div class="main-content">
+            <h1>Address Book</h1>
+            <button>Add new Address</button>
+            <button>Add new pickup location</button>
+            <div class="address-card">
+                <h2>Default Address</h2>
+                <p>User1</p>
+                <p>3-45</p>
+                <p>Post: Mylaram, Mondal: Nasrullabad Dist: Kama Reddy</p>
+                <p>NIZAMABAD, TELANGANA 503301, India</p>
+                <p>Phone number: 80087******</p>
+                <p>Add delivery instructions</p>
+                <div class="buttons">
+                    <button>Edit</button>
+                    <button>Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
